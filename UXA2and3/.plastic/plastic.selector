@@ -1,0 +1,4 @@
+repository "UXA2and3@wechat_os_qy01zibu4cdwnjaubrjse3x9s@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
