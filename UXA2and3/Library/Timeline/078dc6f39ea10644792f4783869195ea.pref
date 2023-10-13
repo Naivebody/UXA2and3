@@ -16,7 +16,7 @@ MonoBehaviour:
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 0.23333333, y: 1.5833334}
-  windowTime: 0
+  windowTime: 1.983333333332
   verticalScroll: 0
   sequencerHeaderWidth: 315
   m_Keys:
