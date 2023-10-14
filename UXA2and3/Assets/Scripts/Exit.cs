@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 
 public class Exit : MonoBehaviour
@@ -12,7 +13,7 @@ public class Exit : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-        Application.Quit();
+        SceneManager.LoadScene(0);
 #endif
     }
 
