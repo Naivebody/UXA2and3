@@ -461,7 +461,13 @@
         453,
         454,
         455,
-        456
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -17011,13 +17017,13 @@
       "DebugActionIndex": 436
     },
     {
-      "Annotation": "Brotli E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.br",
-      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
+      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/7z.exe\" a -tgzip \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.br"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
       ],
       "ToBuildDependencies": [
         436
@@ -17027,20 +17033,90 @@
       "DebugActionIndex": 437
     },
     {
-      "Annotation": "Brotli E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.br",
-      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/A3release.framework.js.gz_mwk3.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"E:\\\\unity hub\\\\Editor\\\\2021.3.18f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\WebGLSupport\\\\WebGLPlayerBuildProgram.exe\",\"targets\":[\"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/A3release.framework.js.gz_mwk3.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 438
+    },
+    {
+      "Annotation": "GzipMarker E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.gz",
+      "Action": "\"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\A3release.framework.js.gz_mwk3.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
+        "Library/Bee/artifacts/csharpactions/A3release.framework.js.gz_mwk3.info",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.framework.js.gz"
+      ],
+      "ToBuildDependencies": [
+        437,
+        438
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 439
+    },
+    {
+      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
+      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/7z.exe\" a -tgzip \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.br"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
       ],
       "ToBuildDependencies": [
         434
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 438
+      "DebugActionIndex": 440
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/A3release.wasm.gz_n9xc.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"E:\\\\unity hub\\\\Editor\\\\2021.3.18f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\WebGLSupport\\\\WebGLPlayerBuildProgram.exe\",\"targets\":[\"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/A3release.wasm.gz_n9xc.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 441
+    },
+    {
+      "Annotation": "GzipMarker E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.gz",
+      "Action": "\"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\A3release.wasm.gz_n9xc.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
+        "Library/Bee/artifacts/csharpactions/A3release.wasm.gz_n9xc.info",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.wasm.gz"
+      ],
+      "ToBuildDependencies": [
+        440,
+        441
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 442
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -17054,7 +17130,7 @@
       "ToBuildDependencies": [
         1
       ],
-      "DebugActionIndex": 439
+      "DebugActionIndex": 443
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -17068,7 +17144,7 @@
       "ToBuildDependencies": [
         2
       ],
-      "DebugActionIndex": 440
+      "DebugActionIndex": 444
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
@@ -17079,7 +17155,7 @@
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 441
+      "DebugActionIndex": 445
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -17110,31 +17186,66 @@
       ],
       "ToBuildDependencies": [
         2,
-        441
+        445
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 442
+      "DebugActionIndex": 446
     },
     {
-      "Annotation": "Brotli E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.br",
-      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Brotli/win_x86_64/brotli.exe\" -o \"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.br\" -i \"Library/Bee/artifacts/WebGL/webgl.data\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
+      "Action": "\"E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/7z.exe\" a -tgzip \"Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"Library/Bee/artifacts/WebGL/webgl.data\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.br"
+        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
       ],
       "ToBuildDependencies": [
-        442
+        446
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 443
+      "DebugActionIndex": 447
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/A3release.data.gz_53jp.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"E:\\\\unity hub\\\\Editor\\\\2021.3.18f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\WebGLSupport\\\\WebGLPlayerBuildProgram.exe\",\"targets\":[\"E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/webgl.data.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/A3release.data.gz_53jp.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 448
+    },
+    {
+      "Annotation": "GzipMarker E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.gz",
+      "Action": "\"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"E:\\unity hub\\Editor\\2021.3.18f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;E:/unity hub/Editor/2021.3.18f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\A3release.data.gz_53jp.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
+        "Library/Bee/artifacts/csharpactions/A3release.data.gz_53jp.info",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.data.gz"
+      ],
+      "ToBuildDependencies": [
+        447,
+        448
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 449
     },
     {
       "Annotation": "PreprocessJS E:/GitHub/Learning/UX/A3/A3release/Build/A3release.loader.js",
-      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/Build/A3release.loader.js'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.br'\" \"FRAMEWORK_FILENAME='A3release.framework.js.br'\" \"CODE_FILENAME='A3release.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
+      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/Build/A3release.loader.js'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.gz'\" \"FRAMEWORK_FILENAME='A3release.framework.js.gz'\" \"CODE_FILENAME='A3release.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -17142,11 +17253,11 @@
         "E:/GitHub/Learning/UX/A3/A3release/Build/A3release.loader.js"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 444
+      "DebugActionIndex": 450
     },
     {
       "Annotation": "PreprocessJS E:/GitHub/Learning/UX/A3/A3release/index.html",
-      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.br'\" \"FRAMEWORK_FILENAME='A3release.framework.js.br'\" \"CODE_FILENAME='A3release.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
+      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.gz'\" \"FRAMEWORK_FILENAME='A3release.framework.js.gz'\" \"CODE_FILENAME='A3release.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
       "Inputs": [
         "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
@@ -17154,7 +17265,7 @@
         "E:/GitHub/Learning/UX/A3/A3release/index.html"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 445
+      "DebugActionIndex": 451
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/favicon.ico",
@@ -17165,7 +17276,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 446
+      "DebugActionIndex": 452
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/fullscreen-button.png",
@@ -17176,7 +17287,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/fullscreen-button.png"
       ],
-      "DebugActionIndex": 447
+      "DebugActionIndex": 453
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-empty-dark.png",
@@ -17187,7 +17298,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 448
+      "DebugActionIndex": 454
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-empty-light.png",
@@ -17198,7 +17309,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 449
+      "DebugActionIndex": 455
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-full-dark.png",
@@ -17209,7 +17320,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 450
+      "DebugActionIndex": 456
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-full-light.png",
@@ -17220,11 +17331,11 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 451
+      "DebugActionIndex": 457
     },
     {
       "Annotation": "PreprocessJS E:/GitHub/Learning/UX/A3/A3release/TemplateData/style.css",
-      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.br'\" \"FRAMEWORK_FILENAME='A3release.framework.js.br'\" \"CODE_FILENAME='A3release.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
+      "Action": "cd /d \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='E\\x3a/GitHub/Learning/UX/A3/A3release/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='UXA2and3'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='A3release.data.gz'\" \"FRAMEWORK_FILENAME='A3release.framework.js.gz'\" \"CODE_FILENAME='A3release.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.18f1'\" \"LOADER_FILENAME='A3release.loader.js'\"",
       "Inputs": [
         "E:/unity hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
       ],
@@ -17232,7 +17343,7 @@
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/style.css"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 452
+      "DebugActionIndex": 458
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/unity-logo-dark.png",
@@ -17243,7 +17354,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 453
+      "DebugActionIndex": 459
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/unity-logo-light.png",
@@ -17254,7 +17365,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 454
+      "DebugActionIndex": 460
     },
     {
       "Annotation": "CopyFiles E:/GitHub/Learning/UX/A3/A3release/TemplateData/webgl-logo.png",
@@ -17265,7 +17376,7 @@
       "Outputs": [
         "E:/GitHub/Learning/UX/A3/A3release/TemplateData/webgl-logo.png"
       ],
-      "DebugActionIndex": 455
+      "DebugActionIndex": 461
     },
     {
       "Annotation": "Player",
@@ -17275,26 +17386,26 @@
       "ToBuildDependencies": [
         1,
         430,
-        437,
-        438,
         439,
-        440,
+        442,
         443,
         444,
-        445,
-        446,
-        447,
-        448,
         449,
         450,
         451,
         452,
         453,
         454,
-        455
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 456
+      "DebugActionIndex": 462
     }
   ],
   "FileSignatures": [
@@ -17663,7 +17774,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 456
+          "Player": 462
         }
 ,  "DefaultNodes": [
     0

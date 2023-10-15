@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Home page.unity
+- path: Assets/Scenes/Page 5.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

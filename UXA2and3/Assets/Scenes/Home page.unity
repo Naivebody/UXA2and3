@@ -364,7 +364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 436, y: -13}
+  m_AnchoredPosition: {x: 433, y: -257}
   m_SizeDelta: {x: 64.2183, y: 59.5545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182972779
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Exit
+  m_text: '
 
 '
   m_isRightToLeft: 0
@@ -1188,6 +1188,8 @@ PlayableDirector:
     value: {fileID: 1369393762}
   - key: {fileID: -1918950683865436816, guid: 078dc6f39ea10644792f4783869195ea, type: 2}
     value: {fileID: 563665503}
+  - key: {fileID: -4132218787789483594, guid: 078dc6f39ea10644792f4783869195ea, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1640852615
@@ -1312,8 +1314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 457.29993, y: 275.59998}
-  m_SizeDelta: {x: 64.2183, y: 56.1012}
+  m_AnchoredPosition: {x: 358.13754, y: -256.99628}
+  m_SizeDelta: {x: 88.6828, y: 89.8734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875732500
 MonoBehaviour:
