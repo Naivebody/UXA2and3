@@ -10,11 +10,8 @@ public class Exit : MonoBehaviour
     
     public void ExitBook()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
         SceneManager.LoadScene(0);
-#endif
+
     }
 
         // Start is called before the first frame update
