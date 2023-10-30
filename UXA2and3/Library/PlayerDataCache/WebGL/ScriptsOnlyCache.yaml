@@ -37,7 +37,6 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - TimelinePreferences
-    - UnityEditor.Timeline.EditorClip
     - UnityEditor.Timeline.SequenceHierarchy
     - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
@@ -100,32 +99,20 @@ ScriptsOnlyBuild:
     fullTypeName: NextPage
     methodName: TurnNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
+  - assembly: Assembly-CSharp
     fullTypeName: ToggledButtonText
     methodName: ToggledText
   - assembly: Assembly-CSharp
-    fullTypeName: LastPage
-    methodName: TurnLastPage
-  - assembly: Assembly-CSharp
-    fullTypeName: NextPage
-    methodName: TurnNextPage
-  - assembly: Assembly-CSharp
-    fullTypeName: NextPage
-    methodName: TurnNextPage
+    fullTypeName: Exit
+    methodName: ExitBook
   - assembly: Assembly-CSharp
     fullTypeName: LastPage
     methodName: TurnLastPage
   - assembly: Assembly-CSharp
     fullTypeName: NextPage
     methodName: TurnNextPage
-  - assembly: Assembly-CSharp
-    fullTypeName: LastPage
-    methodName: TurnLastPage
-  - assembly: Assembly-CSharp
-    fullTypeName: NextPage
-    methodName: TurnNextPage
-  - assembly: Assembly-CSharp
-    fullTypeName: LastPage
-    methodName: TurnLastPage
   - assembly: Assembly-CSharp
     fullTypeName: ToggledButtonText
     methodName: ToggledText
@@ -135,6 +122,48 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LastPage
     methodName: TurnLastPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
+  - assembly: Assembly-CSharp
+    fullTypeName: NextPage
+    methodName: TurnNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: LastPage
+    methodName: TurnLastPage
+  - assembly: Assembly-CSharp
+    fullTypeName: ToggledButtonText
+    methodName: ToggledText
+  - assembly: Assembly-CSharp
+    fullTypeName: ToggledButtonText
+    methodName: ToggledText
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
+  - assembly: Assembly-CSharp
+    fullTypeName: ToggledButtonText
+    methodName: ToggledText
+  - assembly: Assembly-CSharp
+    fullTypeName: NextPage
+    methodName: TurnNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: LastPage
+    methodName: TurnLastPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
+  - assembly: Assembly-CSharp
+    fullTypeName: NextPage
+    methodName: TurnNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: LastPage
+    methodName: TurnLastPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitBook
   - assembly: Assembly-CSharp
     fullTypeName: LastPage
     methodName: TurnLastPage
